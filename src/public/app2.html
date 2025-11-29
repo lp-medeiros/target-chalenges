@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 2 - Movimentação de Estoque</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+
+        <h1>Movimentação de Estoque</h1>
+        <p class="descricao">
+            Gera movimentações de estoque baseado em quantidades de produtos.<br>
+            <strong>Regras:</strong> Valores positivos = Entrada | Valores negativos = Saída
+        </p>
+
+        <div class="opcoes">
+            <h3>Como deseja fornecer o JSON?</h3>
+            <label>
+                <input type="radio" name="fonte-json" id="json-fixo" checked>
+                Usar JSON do desafio
+            </label>
+            <label>
+                <input type="radio" name="fonte-json" id="json-manual">
+                Colar JSON manualmente
+            </label>
+        </div>
+
+        <div class="input-area">
+            <label for="json-input">JSON de Entrada:</label>
+            <textarea id="json-input" rows="15" placeholder='{"estoque": [...]}'></textarea>
+        </div>
+
+        <button id="btn-calcular" class="btn-primary">Processar Estoque</button>
+
+        <div class="resultado-area">
+            <h3>Resultado:</h3>
+            <pre id="resultado">Aguardando processamento...</pre>
+        </div>
+    </div>
+
+    <script src="js/app2.js"></script>
+</body>
+</html>

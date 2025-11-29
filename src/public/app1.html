@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 1 - Calculadora de Comissões</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+
+        <h1>Calculadora de Comissões</h1>
+        <p class="descricao">
+            Calcula comissões de vendedores baseado nos valores de vendas.<br>
+            <strong>Regras:</strong> Vendas ≥ R$500 = 10% | R$100,01-499,99 = 5% | < R$100 = 0%
+        </p>
+
+        <div class="opcoes">
+            <h3>Como deseja fornecer o JSON?</h3>
+            <label>
+                <input type="radio" name="fonte-json" id="json-fixo" checked>
+                Usar JSON do desafio
+            </label>
+            <label>
+                <input type="radio" name="fonte-json" id="json-manual">
+                Colar JSON manualmente
+            </label>
+        </div>
+
+        <div class="input-area">
+            <label for="json-input">JSON de Entrada:</label>
+            <textarea id="json-input" rows="15" placeholder='{"vendas": [...]}'></textarea>
+        </div>
+
+        <button id="btn-calcular" class="btn-primary">Calcular Comissões</button>
+
+        <div class="resultado-area">
+            <h3>Resultado:</h3>
+            <pre id="resultado">Aguardando cálculo...</pre>
+        </div>
+    </div>
+
+    <script src="js/app1.js"></script>
+</body>
+</html>

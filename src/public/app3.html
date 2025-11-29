@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 3 - Calculadora de Juros</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="btn-voltar">← Voltar</a>
+
+        <h1>Calculadora de Juros Diários</h1>
+        <p class="descricao">
+            Calcula juros compostos de <strong>2,5% ao dia</strong> desde a data inicial até hoje.
+        </p>
+
+        <div class="input-area">
+            <label for="valor">Valor Inicial (R$):</label>
+            <input type="number" id="valor" step="0.01" min="0.01" placeholder="Ex: 1000.00">
+
+            <label for="data">Data Inicial:</label>
+            <input type="date" id="data">
+        </div>
+
+        <button id="btn-calcular" class="btn-primary">Calcular Juros</button>
+
+        <div class="resultado-area">
+            <div id="resultado">
+                <p>Preencha os campos acima e clique em "Calcular Juros".</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app3.js"></script>
+</body>
+</html>
